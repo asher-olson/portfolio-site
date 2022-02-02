@@ -2,18 +2,121 @@
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  text-align: left;
   color: #ffffff;
 }
 
 main {
   position: absolute;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
 }
 
 canvas {
   position: fixed;
   top: 0;
   left: 0;
+}
+
+p {
+  line-height: 1.5;
+  color: #d7e5fc;
+}
+
+#header {
+  margin-left: 8px;
+  max-height: 100vh;
+  min-height: 100vh;
+}
+
+#subtitle {
+  padding: 0px;
+  margin: 0px;
+  font-size: 32px;
+}
+
+#newtag {
+  background-color: crimson;
+  position: relative;
+  width: 40px;
+  
+  padding: 4px 6px;
+  border-radius: 30px;
+  font-size: 12px;
+  
+  bottom: 10px;
+}
+
+h1.title {
+  font-size: 92px;
+  grid-column: 2 / 4;
+}
+
+#projects {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+#affirmation-diary {
+  grid-column: 2 / span 4;
+}
+
+#blackjack {
+  grid-column: 5 / span 4;
+}
+
+#portfolio {
+  grid-column: 8 / -2;
+}
+
+.project-title {
+  font-size: 48px;
+  text-decoration: underline;
+}
+
+.project {
+  background-color: rgba(50, 50, 50, 0.3);
+  padding: 0px 24px 18px 24px;
+  margin: 24px 0px;
+  border: #ffffff solid;
+  border-radius: 30px;
+  border-color: #e3edfc;
+}
+
+.project > h3 {
+  font-size: 24px;
+}
+
+#this {
+  text-decoration: none;
+  font-style: italic;
+  color: #dba11a;
+}
+
+.images {
+  text-align: center;
+}
+
+.images > img {
+  width: 45%;
+  height: auto;
+  padding: 0px 6px;
+}
+
+#footer {
+  background-color: rgba(50, 50, 50, 0.3);
+  padding: 2% 5% 5% 5%;
+  margin-top: 6%;
+}
+
+#footer > ul > li{
+  display: inline-block;
+  margin-right: 24px;
+}
+
+.footer-icon {
+  width: 50px;
+  height: auto;
+}
+
+#footer > h3 {
+  padding: 0px 0px 12px 46px;
 }

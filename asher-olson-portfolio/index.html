@@ -4,14 +4,114 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Asher Olson</title>
   </head>
   <body>
     <div id="app">
       <canvas id="bg"></canvas>
       <script type="module" src="/main.js"></script>
       <main>
-        <h1>Give me one hundred thousand dollars</h1>
+        <div id="header">
+          <div id="title-container">
+            <h1 class="title">Asher Olson</h1>
+          </div>
+          <div id="subtitle-container">
+            <span id="subtitle">Software Engineer</span>
+            <span id="newtag">NEW</span>
+          </div>
+        </div>
+        <div id="content">
+          
+          <div id="projects">
+            <h1 class="title">Projects</h1>
+            <div class="project" id="affirmation-diary">
+              <h2 class="project-title">Affirmation Diary</h2>
+              <h3>Description:</h3>
+              <p>
+                A simple diary app inspired by this cool <a href="https://www.instagram.com/afffirmations/">Instagram page</a>. Functionality
+                 includes creating, viewing, and editing diary entries. You can also boost your spirit with the inspiring affirmations that are toasted periodically.
+              </p>
+              <h3>What I Learned:</h3>
+              <p>The main new challenge in this project was the Recycler View, which
+                 was a much more effect tool in making an interactive, scrollable list than a ListView, which I had used perviously.
+                 The implications of using this challenged me to learn more about how to effectively
+                 create smaller layouts, and combine them to build a cleaner UI experience using the Android ecosystem.
+              </p>
+              <h3>Technologies Used:</h3>
+              <p>Android, Java, XML</p>
+              <div class="images">
+                <img src="Screenshot_20220130-020450.png">
+                <img src="Screenshot_20220130-142810.png">
+              </div>
+            </div>
+            <div class="project" id="blackjack">
+              <h2 class="project-title">BlackJack</h2>
+              <h3>Description:</h3>
+              <p>My first Android Project. It's pretty
+                 simple; it simulates BlackJack. Every aspect of the game is present,
+                 including splitting and doubling. There's also an option to check the
+                 current count if you want to practice counting cards.
+              </p>
+              <h3>What I learned:</h3>
+              <p>I came into this project with only some Java knowledge from my intro data structures class Sophomore year, so coming
+                 to understand how to write code that can interact with the UI and external resources was the biggest challenge for me. Luckily,
+                  I was able to use a course from <a href="https://www.codecademy.com/">codecademy</a> to learn the fundamentals.
+                   Some of the technical skills I learned include building layouts using XML, and writing Java to interact with the various widgets in the layout.
+                    Unfortunately, one of my key detriments at the time was a lack of software design knowledge. So, as my codebase grew, it tended to confuse me more
+                     and more, which slowed my progress. Thinking of this setback later gave me an appreciation for the design techniques I would come to learn in my later courses.
+              </p>
+              <h3>Technologies Used:</h3>
+              <p>Android, Java, XML</p>
+              <div class="images">
+                <img src="Screenshot_20220130-022811.png">
+                <img src="Screenshot_20220130-022610.png">
+              </div>
+            </div>
+            <div class="project" id="portfolio">
+              <h2 class="project-title" id="this">this</h2>
+              <h3>Description:</h3>
+              <p>My personal portfolio. I came across a YouTube video about
+                 Three.js, and it was so instersting yet intuitive so I had to try it out. The background 
+                 and 3D objects were all rendered using Three. 
+              </p>
+              <h3>What I Learned:</h3>
+              <p>My main goal and biggest challenge for this was to learn how to make cool 3D stuff with Three.js.
+                But, there were also some growing pains that came with my first independent web project. Many
+                 of these challenges related to my HTML/CSS confidence, so it took some additional exercise to get things
+                  looking how I wanted them to.
+              </p>
+              <h3>Technologies Used:</h3>
+              <p>Three.js, JavaScript, HTML, CSS</p>
+            </div>
+          </div>
+        </div>
+        <div id="footer">
+          <h1 class="title">Contact</h1>
+          
+          <h3>Email: asherolson@gmail.com</h3>
+          <ul>
+            <li>
+              <a href="https://github.com/asher-olson">
+                <img src="4202098_github_code_developer_logo_icon.png" class="footer-icon">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/asher-olson">
+                <img src="5296501_linkedin_network_linkedin logo_icon.png" class="footer-icon">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/olsonasher/">
+                <img src="2609558_instagram_social media_social_icon.png" class="footer-icon">
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/mynameasher">
+                <img src="834708_twitter_icon.png" class="footer-icon">
+              </a>
+            </li>
+          </ul>
+        </div>
       </main>
     </div>
   </body>
