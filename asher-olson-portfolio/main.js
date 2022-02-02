@@ -2,6 +2,15 @@ import './style.css'
 
 import * as THREE from 'three';
 
+import spaceUrl from './milkyway-bg.jpg?url';
+import earthNightUrl from './earthmap-night.jpg?url';
+import earthNormalUrl from './earth-normal.jpg?url';
+import marsUrl from './mars-map.jpg?url';
+import marsNormalUrl from './mars-normal.jpg?url';
+import moonNormalUrl from './moon-normal.jpg?url';
+import asher3Url from './asher3.jpg?url';
+
+
 // import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
 const scene = new THREE.Scene();
@@ -27,7 +36,7 @@ renderer.render(scene, camera);
 //scene.add(torus);
 
 //-----------scene background------------
-const milkyWayBg = new THREE.TextureLoader().load('milkyway-bg.jpg');
+const milkyWayBg = new THREE.TextureLoader().load(spaceUrl);
 scene.background = milkyWayBg;
 
 // -------------add ring--------------
@@ -40,8 +49,8 @@ scene.background = milkyWayBg;
 //scene.add(ring);
 
 //------------add earth-------------
-const earthTexture = new THREE.TextureLoader().load('earthmap-night.jpg');
-const earthNormalTexture = new THREE.TextureLoader().load('earth-normal.jpg');
+const earthTexture = new THREE.TextureLoader().load(earthNightUrl);
+const earthNormalTexture = new THREE.TextureLoader().load(earthNormalUrl);
 const earth = new THREE.Mesh(
   new THREE.SphereGeometry(10, 32, 32),
   new THREE.MeshStandardMaterial({
@@ -53,8 +62,8 @@ const earth = new THREE.Mesh(
 scene.add(earth);
 
 //--------------add mars------------
-const marsTexture = new THREE.TextureLoader().load('mars-map.jpg');
-const marsNormalTexture = new THREE.TextureLoader().load('mars-normal.jpg');
+const marsTexture = new THREE.TextureLoader().load(marsUrl);
+const marsNormalTexture = new THREE.TextureLoader().load(marsNormalUrl);
 const mars = new THREE.Mesh(
   new THREE.SphereGeometry(6, 32, 32),
   new THREE.MeshStandardMaterial({
@@ -82,8 +91,8 @@ scene.add(pointLight)
 // const controls = new OrbitControls(camera, renderer.domElement);
 
 // ------------------add my face--------------
-const moonNormal = new THREE.TextureLoader().load('moon-normal.jpg');
-const biteslipTexture = new THREE.TextureLoader().load('asher3.jpg');
+const moonNormal = new THREE.TextureLoader().load(moonNormalUrl);
+const biteslipTexture = new THREE.TextureLoader().load(asher3Url);
 const asher = new THREE.Mesh(
   new THREE.SphereGeometry(5),
   new THREE.MeshBasicMaterial({map: biteslipTexture, normalMap: moonNormal})
